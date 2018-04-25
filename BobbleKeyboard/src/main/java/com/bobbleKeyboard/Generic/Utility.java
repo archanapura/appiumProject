@@ -1,4 +1,4 @@
-package com.BobbleKeyborad.Generic;
+package com.bobbleKeyboard.Generic;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class Utility
 		 
 		  // Take screenshot and store as a file format
 		  File src= ((TakesScreenshot)ldriver).getScreenshotAs(OutputType.FILE);
-		  String path ="C:/selenium/"+System.currentTimeMillis()+".png";
+		  String path ="./Reports/"+System.currentTimeMillis()+".png";
 		
 		 
 		 FileUtils.copyFile(src, new File("C:/selenium/"+System.currentTimeMillis()+".png"));

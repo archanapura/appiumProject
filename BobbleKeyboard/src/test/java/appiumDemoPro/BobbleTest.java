@@ -5,8 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.BobbleKeyborad.Generic.BaseLibrary;
-import com.BobbleKeyborad.Generic.Constantlib;
+import com.bobbleKeyboard.Generic.BaseLibrary;
+import com.bobbleKeyboard.Generic.Constantlib;
 import com.bobbleKeyboard.pageObjectlib.BobblePage;
 import com.relevantcodes.extentreports.LogStatus;
 

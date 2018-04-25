@@ -1,4 +1,4 @@
-package com.BobbleKeyborad.Generic;
+package com.bobbleKeyboard.Generic;
 
 public class Constantlib
 {

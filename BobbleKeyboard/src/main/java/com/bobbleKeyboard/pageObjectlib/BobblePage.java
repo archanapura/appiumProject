@@ -3,8 +3,8 @@ package com.bobbleKeyboard.pageObjectlib;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
-import com.BobbleKeyborad.Generic.BaseLibrary;
-import com.BobbleKeyborad.Generic.Constantlib;
+import com.bobbleKeyboard.Generic.BaseLibrary;
+import com.bobbleKeyboard.Generic.Constantlib;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.android.Connection;
@@ -206,10 +206,7 @@ public void addLanguage1() {
 		{
 		 System.out.println("Language is successfully added");	
 		}
-		else
-		{
-			 System.out.println("Language is not added");	
-		}
+		
 	}
 	
 	public void closeApp1() throws InterruptedException

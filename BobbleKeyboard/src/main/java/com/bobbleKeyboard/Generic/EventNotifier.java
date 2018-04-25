@@ -1,4 +1,4 @@
-package com.BobbleKeyborad.Generic;
+package com.bobbleKeyboard.Generic;
 
 import java.io.File;
 import java.io.IOException;
