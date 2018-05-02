@@ -14,10 +14,10 @@ public class Utility
 		 
 		  // Take screenshot and store as a file format
 		  File src= ((TakesScreenshot)ldriver).getScreenshotAs(OutputType.FILE);
-		  String path ="./Reports/"+System.currentTimeMillis()+".png";
+		  String path =Constantlib.imgpath+System.currentTimeMillis()+".png";
 		
 		 
-		 FileUtils.copyFile(src, new File("C:/selenium/"+System.currentTimeMillis()+".png"));
+		 FileUtils.copyFile(src, new File(Constantlib.imgpath+System.currentTimeMillis()+".png"));
 		 return path;
 		
 	

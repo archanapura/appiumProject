@@ -1,4 +1,4 @@
-package appiumDemoPro;
+package com.bobbleKeyboard.Tests;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,18 +12,19 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.android.Connection;
 
-public class BobbleTest extends BaseLibrary
+public class BobbleCase1Test extends BaseLibrary 
 {
 	@Test
-	public void themeTabTestCase() throws InterruptedException 
+	public void languageTabTest() throws InterruptedException 
 	{
 		BobblePage page = new BobblePage();
-		logger=extent.startTest("themeTabTestCase");
+		logger=extent.startTest("languageTabTest");
 		logger.log(LogStatus.INFO, "Application started");
 		ad.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
-		Thread.sleep(5000);
-		logger.log(LogStatus.INFO, "themeTabTestCase started");
+		
+		
+		logger.log(LogStatus.INFO, "languageTabTestCase started");
 		
 		page.importantDisclosure();
 		page.permitToAccessDevice();
@@ -35,14 +36,17 @@ public class BobbleTest extends BaseLibrary
 		page.welcomePage();
 
 		page.permitToAccessLocation();
-		page.selectTheme();
-
-		page.selectKeyboard();
-		page.testKeyboard();
+		
+		
+		
+		page.selectLanguageTab();
+		page.addLanguage1();
+		page.checkIfLangAdded();
 		page.closeApp1();
 		
-		logger.log(LogStatus.INFO, "themeTabTestCase ended");
+		logger.log(LogStatus.INFO, "languageTabTestCase closed");
 		logger.log(LogStatus.INFO, "Application closed");
 	}
+
 
 }

@@ -18,7 +18,7 @@ public static final String toggle1="com.touchtalent.bobbleapp:id/keyBordertoggle
 public static final String toggle2="com.touchtalent.bobbleapp:id/accentedCharcterToggle";
 public static final String language="//android.widget.TextView[@text='Languages']";
 public static final String languagePage="com.touchtalent.bobbleapp:id/textHeading";
-public static final String selectLanguage="(//android.widget.TextView[contains(@text,'K')])[2]";
+public static final String selectLanguage="(//android.widget.TextView[contains(@text,'ZZZZ')])[2]";
 
 //Setting Desired Capabilities
 
@@ -29,6 +29,6 @@ public static final String deviceName="Lava A97";
 public static final String appActivity="com.touchtalent.bobbleapp.activities.SplashActivity";
 public static final String appPackage="com.touchtalent.bobbleapp";
 
-
+public static final String imgpath ="C:\\Users\\TYSS\\Desktop\\appiumProject\\BobbleKeyboard\\screenshots\\";
 
 }

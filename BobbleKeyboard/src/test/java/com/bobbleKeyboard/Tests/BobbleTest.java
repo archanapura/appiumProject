@@ -1,5 +1,6 @@
-package appiumDemoPro;
+package com.bobbleKeyboard.Tests;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -7,26 +8,28 @@ import org.testng.annotations.Test;
 
 import com.bobbleKeyboard.Generic.BaseLibrary;
 import com.bobbleKeyboard.Generic.Constantlib;
+import com.bobbleKeyboard.Generic.Utility;
 import com.bobbleKeyboard.pageObjectlib.BobblePage;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.android.Connection;
 
-public class BobbleCase1Test extends BaseLibrary 
+public class BobbleTest extends BaseLibrary
 {
 	@Test
-	public void languageTabTest() throws InterruptedException 
+	public void themeTabTestCase() throws Exception 
 	{
 		BobblePage page = new BobblePage();
-		logger=extent.startTest("languageTabTest");
+		logger=extent.startTest("themeTabTestCase");
 		logger.log(LogStatus.INFO, "Application started");
 		ad.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
-		
-		
-		logger.log(LogStatus.INFO, "languageTabTestCase started");
+		Thread.sleep(5000);
+		logger.log(LogStatus.INFO, "themeTabTestCase started");
 		
 		page.importantDisclosure();
+		String path = Utility.captureScreenShot(ad);
+		logger.addScreenCapture(path);
 		page.permitToAccessDevice();
 		page.permitToAccessContacts();
 
@@ -36,17 +39,14 @@ public class BobbleCase1Test extends BaseLibrary
 		page.welcomePage();
 
 		page.permitToAccessLocation();
-		
-		
-		
-		page.selectLanguageTab();
-		page.addLanguage1();
-		page.checkIfLangAdded();
+		page.selectTheme();
+
+		page.selectKeyboard();
+		page.testKeyboard();
 		page.closeApp1();
 		
-		logger.log(LogStatus.INFO, "languageTabTestCase closed");
+		logger.log(LogStatus.INFO, "themeTabTestCase ended");
 		logger.log(LogStatus.INFO, "Application closed");
 	}
-
 
 }

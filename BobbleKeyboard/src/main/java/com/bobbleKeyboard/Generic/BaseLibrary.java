@@ -31,7 +31,7 @@ public class BaseLibrary {
 
 		/*extent=new ExtentReports("./test-output/advance.html");
 	   	logger=extent.startTest("ByjusTest");*/
-		extent=new ExtentReports("./test-output/advance1.html",false);
+		extent=new ExtentReports("./Reports/advance1.html",false);
 		// extent.loadConfig(new File("./test-output/extent-config.xml"));	
 
 	}

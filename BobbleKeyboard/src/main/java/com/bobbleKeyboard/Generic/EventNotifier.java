@@ -1,17 +1,20 @@
 package com.bobbleKeyboard.Generic;
 
-import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class EventNotifier implements ITestListener{
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
+
+
+public class EventNotifier implements ITestListener{
+ public  WebDriver driver;
+ public static ExtentTest logger;
 	@Override
 	public void onFinish(ITestContext result) {
 		// TODO Auto-generated method stub
@@ -35,7 +38,7 @@ public class EventNotifier implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		 String FailedTestName=result.getMethod().getMethodName();
+		/* String FailedTestName=result.getMethod().getMethodName();
 	        EventFiringWebDriver edri=new EventFiringWebDriver(BaseLibrary.ad);
 	        File srcfile=edri.getScreenshotAs(OutputType.FILE);
 	        File dstfile=new File("./screenshot/"+FailedTestName+".png");
@@ -44,7 +47,18 @@ public class EventNotifier implements ITestListener{
 	            }
 	            catch(IOException e){
 	            };
+		*/
+		String screenshot_path;
+		try {
+			screenshot_path = Utility.captureScreenShot(driver);
+			String image= logger.addScreenCapture(screenshot_path);
+			logger.log(LogStatus.FAIL, "Title verification", image);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
+	
 	}
 
 	@Override
