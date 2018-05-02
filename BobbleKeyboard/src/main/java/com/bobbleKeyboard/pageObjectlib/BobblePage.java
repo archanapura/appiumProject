@@ -168,7 +168,7 @@ public class BobblePage extends BaseLibrary
 			ad.findElement(By.id(Constantlib.toggle1)).click();
 			ad.findElement(By.id(Constantlib.toggle2)).click();
 
-			ad.findElement(By.id(Constantlib.textbox)).sendKeys("abc");
+			ad.findElement(By.id(Constantlib.textbox)).sendKeys("test");
 			logger.log(LogStatus.INFO, "Testing selected theme");
 			ad.hideKeyboard();
 		}

@@ -22,8 +22,7 @@ public class BobbleCase1Test extends BaseLibrary
 		logger.log(LogStatus.INFO, "Application started");
 		ad.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
-		ad.setConnection(Connection.NONE);
-		Thread.sleep(5000);
+		
 		
 		logger.log(LogStatus.INFO, "languageTabTestCase started");
 		
@@ -39,8 +38,7 @@ public class BobbleCase1Test extends BaseLibrary
 		page.permitToAccessLocation();
 		
 		
-		ad.setConnection(Connection.WIFI);
-		Thread.sleep(5000);
+		
 		page.selectLanguageTab();
 		page.addLanguage1();
 		page.checkIfLangAdded();

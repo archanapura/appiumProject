@@ -21,7 +21,7 @@ public class BobbleTest extends BaseLibrary
 		logger=extent.startTest("themeTabTestCase");
 		logger.log(LogStatus.INFO, "Application started");
 		ad.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		ad.setConnection(Connection.NONE);
+		
 		Thread.sleep(5000);
 		logger.log(LogStatus.INFO, "themeTabTestCase started");
 		
@@ -35,10 +35,6 @@ public class BobbleTest extends BaseLibrary
 		page.welcomePage();
 
 		page.permitToAccessLocation();
-		
-		
-		ad.setConnection(Connection.WIFI);
-		Thread.sleep(5000);
 		page.selectTheme();
 
 		page.selectKeyboard();

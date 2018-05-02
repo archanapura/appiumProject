@@ -36,7 +36,7 @@ public class EventNotifier implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		 String FailedTestName=result.getMethod().getMethodName();
-	        EventFiringWebDriver edri=new EventFiringWebDriver(BaseLibrary.driver);
+	        EventFiringWebDriver edri=new EventFiringWebDriver(BaseLibrary.ad);
 	        File srcfile=edri.getScreenshotAs(OutputType.FILE);
 	        File dstfile=new File("./screenshot/"+FailedTestName+".png");
 	        try{

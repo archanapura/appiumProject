@@ -5,11 +5,11 @@
     <classes>
       <class name="appiumDemoPro.BobbleTest">
         <methods>
-          <include name="launchApp"/>
-          <include name="closeReport"/>
           <include name="cleanConfig"/>
+          <include name="closeReport"/>
           <include name="themeTabTestCase"/>
           <include name="reportGrenerator"/>
+          <include name="launchApp"/>
         </methods>
       </class> <!-- appiumDemoPro.BobbleTest -->
     </classes>
