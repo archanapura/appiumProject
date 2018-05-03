@@ -29,6 +29,6 @@ public static final String deviceName="Lava A97";
 public static final String appActivity="com.touchtalent.bobbleapp.activities.SplashActivity";
 public static final String appPackage="com.touchtalent.bobbleapp";
 
-public static final String imgpath ="C:\\Users\\TYSS\\Desktop\\appiumProject\\BobbleKeyboard\\screenshots\\";
+public static final String imgpath ="C:\\Users\\Archana\\git\\appiumProjectPOC\\BobbleKeyboard\\screenshots\\";
 
 }

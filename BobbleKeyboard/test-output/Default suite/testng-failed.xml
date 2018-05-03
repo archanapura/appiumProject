@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appiumDemoPro.BobbleCase1Test">
+      <class name="com.bobbleKeyboard.Tests.BobbleTest">
         <methods>
-          <include name="languageTabTest"/>
+          <include name="themeTabTestCase"/>
           <include name="cleanConfig"/>
           <include name="closeReport"/>
           <include name="reportGrenerator"/>
           <include name="launchApp"/>
         </methods>
-      </class> <!-- appiumDemoPro.BobbleCase1Test -->
+      </class> <!-- com.bobbleKeyboard.Tests.BobbleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

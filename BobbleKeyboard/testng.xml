@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="appiumDemoPro.BobbleCase1Test"/>
-      <class name="appiumDemoPro.BobbleTest"/>
+      <class name="com.bobbleKeyboard.Tests.BobbleTest"/>
+      <class name="com.bobbleKeyboard.Tests.BobbleCase1Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
